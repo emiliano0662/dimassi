@@ -1,87 +1,33 @@
 nav.navbar {
-    padding: 0px;
-    margin-bottom: 0px;
+    padding: 30px 0px 20px 0px;
+    margin: 0px;
     border-radius: 0px;
     border: none;
+    background-color: #FFF;
 
-    .content-type-top {
-        padding: 5px 0px;
-        background: #f3f3f3;
+    .navbar-header {
 
-        ul {
-            padding-left: 0px;
-            margin-bottom: 0px;
-            list-style: none;
-
-            li {
-                float: left;
-                position: relative;
-                padding: 0px 10px;
-                border-right: 1px solid #000;
-
-                p {
-                    margin-bottom: 0px;
-                    line-height: 23px;
-                    font-size: 12px;
-                    color: #404041;
-
-                    span {
-                        font-size: 23px;
-                    }
-
-                    a {
-                        font-size: 15px;
-                        color: #000;
-
-                        &:hover {
-                            color: #FFA200;
-                        }
-                    }
-                }
-
-                &:last-child {
-                    border-right: none;
-
-                    a {
-                        text-decoration: none;
-                    }
-                }
-            }
+        .navbar-brand {
+            height: auto;
+            margin-left: 0px;
+            padding: 0px 0px 0px 0px;
         }
     }
 
-    .content-type-body {
-        background: #FFF;
-        border-bottom: 1px solid #e0e0e0;
+    .navbar-nav {
 
-        .navbar-header {
+        > li {
 
-            .navbar-brand {
-                height: auto;
-                margin-left: 0px;
-                padding: 26px 0px 0px 0px;
-            }
-        }
-
-        .navbar-nav {
-
-            > li {
-
-                > a {
-                    padding: 29px 5px 26px 5px;
-                    background-color: transparent;
-                    text-transform: uppercase;
-                    text-decoration: none;
-                    text-align: center;
-                    color: #5b5b5b;
-                    border-bottom: 3px solid #FFFFFF;
-                    
-                    &.active,
-                    &:hover {
-                        color: #FFF;
-                        background-color: #ffa200;
-                        border-bottom: 3px solid #848484;
-                    }
+            > a {
+                padding: 0px 15px;
+                background-color: transparent;
+                text-align: center;
+                color: #717171;
+                
+                &.active,
+                &:hover {
+                    text-decoration: underline;
+                    color: #b3b3b3;
                 }
             }
         }
@@ -93,85 +39,13 @@ nav.navbar {
 }
 
 @media (max-width: $screen-md) {
-    
-    nav.navbar {
-
-        .content-type-body {
-
-            .container {
-                max-width: 660px;
-
-                .navbar-header {
-                    width: 100%;
-    
-                    .navbar-brand {
-                        width: 100%;
-                        padding: 20px 0px 15px 0px;
-                        
-                        img {
-                            margin: 0px auto;
-                        }
-                    }
-                }
-    
-                .navbar-nav {
-    
-                    > li {
-    
-                        > a {
-                            padding: 15px 5px 15px 5px;
-                        }
-                    }
-                }
-            }
-        }
-    }    
+      
 }
 
 @media (max-width: $screen-sm) {
     
-    nav.navbar {
-
-        .content-type-body {
-
-            .container {
-
-                .navbar-header {
-                    width: auto;
-                    
-                    .navbar-brand {
-                        width: auto;
-                        padding: 15px 0px 15px 0px;
-                    }
-
-                    .navbar-toggle {
-                        margin-top: 12px;
-                    }
-                }
-            }
-        }
-    }   
 }
 
 @media (max-width: $screen-sm) {
 
-    nav.navbar {
-
-        .content-type-body {
-
-            .container {
-
-                .navbar-header {
-                    
-                    .navbar-brand {
-                         padding: 23px 0px 18px 0px;
-                        
-                        img {
-                            max-width: 180px;
-                        }
-                    }
-                }
-            }
-        }
-    }   
 }

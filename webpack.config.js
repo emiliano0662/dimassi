@@ -16,7 +16,6 @@ const config = {
   	entry: [
   		'./src/scss/main.scss',
 		'./src/js/jquery.appear.js',
-		'./src/js/jquery.fancybox.min.js',
 		'./src/js/owl.carousel.min.js',
   		'./src/js/main.js'
   	],
