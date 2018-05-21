@@ -1,11 +1,87 @@
 #page-home {
 
+    section {
+
+        &:nth-of-type(1) {
+
+            .col-md-12 {
+                padding: 0px;
+
+                .owl-carousel {
+    
+                    .item {
+                        width: 100%;
+                        background-color: #ed037c;
+                            
+                        h2 {
+                            min-height: 500px;
+                            text-transform: uppercase;
+                            text-align: center;
+                            font-weight: 700;
+                            font-size: 60px;
+                            color:#FFF;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                    }
+                }
+
+                .btn-owl-carousel-main {
+                    top: 250px;
+                    position: absolute;
+                    z-index: 1;
+                    
+                    &.btn-left {
+                        left: 15px;
+                    }
+
+                    &.btn-right {
+                        right: 15px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: $screen-md) {
 
-    #page-home {
+   #page-home {
 
+        section {
+
+            &:nth-of-type(1) {
+
+                .col-md-12 {
+
+                    .owl-carousel {
+        
+                        .item {
+                                
+                            h2 {
+                                min-height: 350px;
+                                font-size: 40px;
+                            }
+                        }
+                    }
+
+                    .btn-owl-carousel-main {
+                        top: 175px;
+                        position: absolute;
+                        z-index: 1;
+                        
+                        &.btn-left {
+                            left: 15px;
+                        }
+
+                        &.btn-right {
+                            right: 15px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -13,5 +89,17 @@
 
     #page-home {
 
+        section {
+
+            &:nth-of-type(1) {
+
+                .col-md-12 {
+
+                    .btn-owl-carousel-main {
+                        display: none;
+                    }
+                }
+            }
+        }
     }
 }

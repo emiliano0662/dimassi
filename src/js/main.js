@@ -35,7 +35,7 @@ $(document).ready(function() {
 		}
 	});
 
-	$('.owl-carousel-main').owlCarousel({
+	var owl_carousel_main = $('.owl-carousel-main').owlCarousel({
 		items: 1,
 		loop: true,
 		margin: 0,
@@ -43,6 +43,18 @@ $(document).ready(function() {
 		dots: false,
 		autoplay: true,
 		animateOut: 'fadeOut'
+	});
+
+	$(".btn-owl-carousel-main.btn-left").on('click', function (event) {
+		event.preventDefault();
+
+		owl_carousel_main.trigger('prev.owl.carousel');
+	});
+
+	$(".btn-owl-carousel-main.btn-right").on('click', function (event) {
+		event.preventDefault();
+
+		owl_carousel_main.trigger('next.owl.carousel');
 	});
 
 });
