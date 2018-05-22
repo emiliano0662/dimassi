@@ -199,6 +199,195 @@
                                             padding: 0px 5px;
                                         }
                                     }
+
+                                    &:nth-of-type(2) {
+
+                                        > .col-md-12 {
+                                            margin-top: 30px;
+                                            padding: 0px 30px 130px 0px;
+                                            border-right: 15px solid #2a3891;
+                
+                                            h2 {
+                                                margin: 0px 0px 10px 0px;
+                                                padding-left: 65px;
+                                                font-weight: 700;
+                                                font-size: 45px;
+                                                color: #717171;
+
+                                                &:nth-of-type(1) {
+                                                    background: transparent url('../img/bg-title-h2-yellow.jpg') left center / 30px auto no-repeat;
+                                                }
+
+                                                &:nth-of-type(2) {
+                                                    background: transparent url('../img/bg-title-h2-green.jpg') left center / 30px auto no-repeat;
+                                                }
+
+                                                &:nth-of-type(3) {
+                                                    background: transparent url('../img/bg-title-h2-blue.jpg') left center / 30px auto no-repeat;
+                                                }
+                                            }
+                                            
+                                            p {
+                                                min-height: 150px;
+                                                margin: 0px 0px 15px 0px;
+                                                padding-left: 65px;
+                                                font-size: 18px;
+                                                color: #717171;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            &:nth-of-type(2) {
+                                padding-right: 0px;
+                              
+                                .content-gray {
+                                    padding-bottom: 173px;
+                                    background-color: #a1a1a1;
+
+                                    img {
+                                        max-width: 265px;
+                                        margin-bottom: 40px;
+                                    }
+
+                                    h2 {
+                                        margin: 0px 0px 10px 0px;
+                                        padding: 0px 30px 0px 60px;
+                                        font-weight: 700;
+                                        font-size: 45px;
+                                        color: #FFF;
+                                        background: transparent url('../img/icon-left-type-2.png') 15px center / 30px auto no-repeat;
+                                    }
+                                    
+                                    p {
+                                        min-height: 150px;
+                                        margin: 0px 0px 15px 0px;
+                                        padding: 0px 30px 0px 60px;
+                                        font-size: 18px;
+                                        color: #FFF;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &:nth-of-type(5) {
+            padding: 60px 0px 80px 0px;
+            background-color: #2a3891;
+
+            h2 {
+                max-width: 480px;
+                margin: 0px auto 30px auto;
+                padding: 0px 50px;
+                text-align: center;
+                font-weight: 700;
+                font-size: 35px;
+                color: #FFF;
+                background: transparent url('../img/icon-left-slider.png') left center / auto 25px no-repeat;
+            }
+            
+            p {
+                margin: 0px;
+                text-align: center;
+                font-size: 18px;
+                color: #FFF;
+            }
+        }
+
+        &:nth-of-type(6) {
+            padding: 10px 0px;
+
+            .row {
+
+                &:nth-of-type(1) {
+                    padding: 20px 0px;
+                    background-color: transparent;
+                    background-image: url('../img/border-bottom-type-2.png'), url('../img/border-bottom-type-2.png');
+                    background-position: left top, left bottom;
+                    background-repeat: repeat-x, repeat-x;
+
+                    h2 {
+                        max-width: 295px;
+                        margin: 0px auto;
+                        padding: 0px 50px;
+                        text-align: center;
+                        font-weight: 700;
+                        font-size: 45px;
+                        color: #717171;
+                        background: transparent url('../img/icon-left-slider.png') right 17px / auto 20px no-repeat;
+                    }
+                }
+            }
+        }
+
+        &:nth-of-type(7) {
+            padding: 130px 0px 100px 0px;
+            background: transparent url('../img/bg-contact.png') center center / cover no-repeat;
+
+            form {
+
+                .form-group {
+
+                    label {
+                        font-weight: 700;
+                        font-size: 18px;
+                        color: #000;
+                    }
+
+                    .form-control {
+                        height: auto;
+                        padding: 12px 12px;
+                        color: #FFF;
+                        border: none;
+                        background: rgba(0, 0, 0, 0.2);
+                    }
+
+                    input {
+                        max-width: 50%;
+                    }
+
+                    button {
+                        width: 70px;
+                        height: 40px;
+                        background: transparent url('../img/bg-btn-send.png') top left / 100% 100% no-repeat;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media  (min-width: $screen-md) and (max-width: $screen-lg) {
+
+    #page-home {
+
+        section {
+
+            &:nth-of-type(4) {
+
+                > .container {
+
+                    > .row {
+
+                        &:nth-of-type(2) {
+
+                            > .col-md-6 {
+
+                                &:nth-of-type(1) {
+
+                                    .row {
+
+                                        &:nth-of-type(2) {
+
+                                            > .col-md-12 {
+                                                padding: 0px 30px 306px 0px;
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -208,6 +397,7 @@
         }
     }
 }
+    
 
 @media (max-width: $screen-md) {
 
@@ -285,6 +475,74 @@
                     }
                 }
             }
+
+            &:nth-of-type(4) {
+
+                > .container {
+
+                    > .row {
+
+                        &:nth-of-type(2) {
+
+                            > .col-md-6 {
+
+                                &:nth-of-type(1) {
+
+                                    .row {
+
+                                        &:nth-of-type(1) {
+                                            padding-left: 0px;
+                                            
+                                            .col-md-6 {
+                                                padding: 0px 15px;
+                                            }
+                                        }
+
+                                        &:nth-of-type(2) {
+
+                                            > .col-md-12 {
+                                                padding: 0px 15px 30px 0px;
+                                                border-right: none;
+
+                                                p {
+                                                    min-height: auto;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                &:nth-of-type(2) {
+                                    padding-right: 15px;
+                                    margin-bottom: 15px;
+                                
+                                    .content-gray {
+                                        padding-bottom: 30px;
+
+                                        p {
+                                            min-height: auto;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &:nth-of-type(7) {
+                padding: 130px 0px 100px 0px;
+
+                form {
+
+                    .form-group {
+
+                        input {
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -322,6 +580,73 @@
                         }
                     }
                 }
+            }
+
+            &:nth-of-type(4) {
+
+                > .container {
+
+                    > .row {
+
+                        &:nth-of-type(2) {
+
+                            > .col-md-6 {
+
+                                &:nth-of-type(1) {
+
+                                    .row {
+
+                                        &:nth-of-type(1) {
+
+                                            .col-md-6 {
+                                                padding: 0px 5px;
+                                            }
+                                        }
+
+                                        &:nth-of-type(2) {
+
+                                            > .col-md-12 {
+                                                padding: 0px 15px 30px 15px;
+
+                                                h2 {
+                                                    padding-left: 0px;
+                                                    font-size: 30px;
+                                                    background: transparent !important;
+                                                }
+
+                                                p {
+                                                    padding-left: 0px;
+                                                    text-align: justify;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                &:nth-of-type(2) {
+                                
+                                    .content-gray {
+
+                                        h2 {
+                                            font-size: 30px;
+                                            padding: 0px 15px 0px 15px;
+                                            background: transparent;
+                                        }
+                                        
+                                        p {
+                                            padding: 0px 15px 0px 15px;
+                                            text-align: justify;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &:nth-of-type(7) {
+                padding: 70px 0px 50px 0px;
             }
         }
     }
