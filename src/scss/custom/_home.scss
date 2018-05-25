@@ -355,6 +355,10 @@
                         height: 40px;
                         background: transparent url('../img/bg-btn-send.png') top left / 100% 100% no-repeat;
                     }
+
+                    .alert {
+                        display: none;
+                    }
                 }
             }
         }

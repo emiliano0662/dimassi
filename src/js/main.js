@@ -34,6 +34,36 @@ $(document).ready(function() {
 		$('body,html').animate({ scrollTop: $(seccion).offset().top }, 1000, 'swing');
 	});
 
+	$("#form-contact").submit(function (event) {
+		event.preventDefault();
+
+		$.ajax({
+			cache: false,
+			type: $(this).attr("method"),
+			url: $(this).attr("action"),
+			data: $(this).serialize(),
+			success: function (data) {
+
+				if (data) {
+
+					$('.alert').hide();
+					$('.alert-success').fadeIn();
+
+					$("#form-contact")[0].reset();
+					
+				}else{
+
+					$('.alert').hide();
+					$('.alert-danger').fadeIn();
+
+				}
+
+				setTimeout(function () { $('.alert').hide(); }, 5000);
+			}
+		});
+
+	});
+
 	$("[data-dinaanim]").each(function () {
 
 		var $this = $(this);
